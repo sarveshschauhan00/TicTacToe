@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/game_tiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/row0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/tile00"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="x" />
+
+            <Button
+                android:id="@+id/tile01"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="o" />
+
+            <Button
+                android:id="@+id/tile02"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="o" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/tile10"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="x" />
+
+            <Button
+                android:id="@+id/tile11"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="x" />
+
+            <Button
+                android:id="@+id/tile12"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:text="o"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/tile20"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="o" />
+
+            <Button
+                android:id="@+id/tile21"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="o" />
+
+            <Button
+                android:id="@+id/tile22"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_margin="4dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="x" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="reset"
+        android:onClick="resetGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/turn_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#05F341"
+        android:text="x"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_tiles" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
