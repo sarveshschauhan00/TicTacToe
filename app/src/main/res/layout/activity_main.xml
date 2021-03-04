@@ -78,9 +78,9 @@
                 android:layout_width="40pt"
                 android:layout_height="40pt"
                 android:layout_margin="4dp"
-                android:text="o"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="o" />
         </TableRow>
 
         <TableRow
@@ -125,7 +125,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="reset"
-        android:onClick="resetGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -139,6 +138,7 @@
         android:textAlignment="center"
         android:textSize="60sp"
         android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/reset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
